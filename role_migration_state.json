@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-12-03T20:31:25.576923Z",
+  "direction": "forward",
+  "from_role": "Too Many Perms",
+  "to_role": "Just Right Perms",
+  "affected_users": [
+    {
+      "userId": "f3bdbb69-cf4c-4604-b792-5805943890a5",
+      "displayName": "Ad Minn",
+      "userPrincipalName": "admin@chrisbbehrenshotmail466.onmicrosoft.com"
+    }
+  ]
+}
