@@ -1,0 +1,230 @@
+{
+  "generatedAt": "2025-12-03T11:25:46.528792Z",
+  "summary": {
+    "totalConditionalAccessPolicies": 2,
+    "totalUsers": 4,
+    "totalPrivilegedUsers": 2
+  },
+  "conditionalAccessPolicies": [
+    {
+      "backing_store": {},
+      "additional_data": {},
+      "id": "98590ad9-6637-4893-a6f7-21cc21c46c06",
+      "odata_type": null,
+      "conditions": {
+        "backing_store": {},
+        "additional_data": {},
+        "applications": {
+          "backing_store": {},
+          "additional_data": {},
+          "application_filter": null,
+          "exclude_applications": [],
+          "include_applications": [
+            "All"
+          ],
+          "include_authentication_context_class_references": [],
+          "include_user_actions": [],
+          "odata_type": null
+        },
+        "authentication_flows": null,
+        "client_app_types": [
+          "all"
+        ],
+        "client_applications": null,
+        "devices": null,
+        "insider_risk_levels": null,
+        "locations": null,
+        "odata_type": null,
+        "platforms": null,
+        "service_principal_risk_levels": [],
+        "sign_in_risk_levels": [],
+        "user_risk_levels": [],
+        "users": {
+          "backing_store": {},
+          "additional_data": {},
+          "exclude_groups": [],
+          "exclude_guests_or_external_users": null,
+          "exclude_roles": [],
+          "exclude_users": [],
+          "include_groups": [],
+          "include_guests_or_external_users": null,
+          "include_roles": [],
+          "include_users": [
+            "601df4d0-f5ea-4ff4-8f57-d5b956325ff6"
+          ],
+          "odata_type": null
+        }
+      },
+      "created_date_time": "2025-12-02T17:45:21.794074+00:00Z",
+      "description": null,
+      "display_name": "BLOCK THAT GUY",
+      "grant_controls": {
+        "backing_store": {},
+        "additional_data": {
+          "authenticationStrength@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('98590ad9-6637-4893-a6f7-21cc21c46c06')/grantControls/authenticationStrength/$entity"
+        },
+        "authentication_strength": null,
+        "built_in_controls": [
+          "block"
+        ],
+        "custom_authentication_factors": [],
+        "odata_type": null,
+        "operator": "OR",
+        "terms_of_use": [],
+        "authenticationStrength@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('98590ad9-6637-4893-a6f7-21cc21c46c06')/grantControls/authenticationStrength/$entity"
+      },
+      "modified_date_time": "2025-12-02T18:46:24.772556+00:00Z",
+      "session_controls": null,
+      "state": "disabled",
+      "template_id": null
+    },
+    {
+      "backing_store": {},
+      "additional_data": {},
+      "id": "302185b1-8bca-42b2-8445-842fc3130bc8",
+      "odata_type": null,
+      "conditions": {
+        "backing_store": {},
+        "additional_data": {},
+        "applications": {
+          "backing_store": {},
+          "additional_data": {},
+          "application_filter": null,
+          "exclude_applications": [],
+          "include_applications": [
+            "All"
+          ],
+          "include_authentication_context_class_references": [],
+          "include_user_actions": [],
+          "odata_type": null
+        },
+        "authentication_flows": null,
+        "client_app_types": [
+          "all"
+        ],
+        "client_applications": null,
+        "devices": null,
+        "insider_risk_levels": null,
+        "locations": null,
+        "odata_type": null,
+        "platforms": null,
+        "service_principal_risk_levels": [],
+        "sign_in_risk_levels": [],
+        "user_risk_levels": [],
+        "users": {
+          "backing_store": {},
+          "additional_data": {},
+          "exclude_groups": [],
+          "exclude_guests_or_external_users": null,
+          "exclude_roles": [],
+          "exclude_users": [],
+          "include_groups": [],
+          "include_guests_or_external_users": null,
+          "include_roles": [],
+          "include_users": [
+            "601df4d0-f5ea-4ff4-8f57-d5b956325ff6"
+          ],
+          "odata_type": null
+        }
+      },
+      "created_date_time": "2025-12-02T20:45:55.176274+00:00Z",
+      "description": null,
+      "display_name": "Phishing-resistant MFA",
+      "grant_controls": {
+        "backing_store": {},
+        "additional_data": {
+          "authenticationStrength@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('302185b1-8bca-42b2-8445-842fc3130bc8')/grantControls/authenticationStrength/$entity"
+        },
+        "authentication_strength": {
+          "backing_store": {},
+          "additional_data": {
+            "combinationConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('302185b1-8bca-42b2-8445-842fc3130bc8')/grantControls/authenticationStrength/combinationConfigurations"
+          },
+          "id": "00000000-0000-0000-0000-000000000004",
+          "odata_type": null,
+          "allowed_combinations": [
+            "windowsHelloForBusiness",
+            "fido2",
+            "x509CertificateMultiFactor"
+          ],
+          "combination_configurations": [],
+          "created_date_time": "2021-12-01T08:00:00+00:00Z",
+          "description": "Phishing-resistant, Passwordless methods for the strongest authentication, such as a FIDO2 security key",
+          "display_name": "Phishing-resistant MFA",
+          "modified_date_time": "2021-12-01T08:00:00+00:00Z",
+          "policy_type": "builtIn",
+          "requirements_satisfied": [],
+          "combinationConfigurations@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('302185b1-8bca-42b2-8445-842fc3130bc8')/grantControls/authenticationStrength/combinationConfigurations"
+        },
+        "built_in_controls": [],
+        "custom_authentication_factors": [],
+        "odata_type": null,
+        "operator": "OR",
+        "terms_of_use": [],
+        "authenticationStrength@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies('302185b1-8bca-42b2-8445-842fc3130bc8')/grantControls/authenticationStrength/$entity"
+      },
+      "modified_date_time": null,
+      "session_controls": null,
+      "state": "enabled",
+      "template_id": null
+    }
+  ],
+  "usersWithDirectoryRoles": [
+    {
+      "id": "f3bdbb69-cf4c-4604-b792-5805943890a5",
+      "displayName": "Ad Minn",
+      "userPrincipalName": "admin@chrisbbehrenshotmail466.onmicrosoft.com",
+      "onPremisesImmutableId": null,
+      "directoryRoles": [
+        "Global Administrator",
+        "Security Administrator"
+      ]
+    },
+    {
+      "id": "fe14e952-4fa5-4ac5-9b55-cb0681b9754d",
+      "displayName": "Chris Behrens",
+      "userPrincipalName": "chrisbbehrens_hotmail.com#EXT#@chrisbbehrenshotmail466.onmicrosoft.com",
+      "onPremisesImmutableId": null,
+      "directoryRoles": [
+        "Global Administrator",
+        "Security Administrator"
+      ]
+    },
+    {
+      "id": "601df4d0-f5ea-4ff4-8f57-d5b956325ff6",
+      "displayName": "My Automation App",
+      "userPrincipalName": "myautomationapp@chrisbbehrenshotmail466.onmicrosoft.com",
+      "onPremisesImmutableId": null,
+      "directoryRoles": []
+    },
+    {
+      "id": "dcab4bfb-bee7-402e-9a28-55db14849e83",
+      "displayName": "Tarr Gett",
+      "userPrincipalName": "target@chrisbbehrenshotmail466.onmicrosoft.com",
+      "onPremisesImmutableId": null,
+      "directoryRoles": []
+    }
+  ],
+  "privilegedUsersOnly": [
+    {
+      "id": "f3bdbb69-cf4c-4604-b792-5805943890a5",
+      "displayName": "Ad Minn",
+      "userPrincipalName": "admin@chrisbbehrenshotmail466.onmicrosoft.com",
+      "onPremisesImmutableId": null,
+      "directoryRoles": [
+        "Global Administrator",
+        "Security Administrator"
+      ]
+    },
+    {
+      "id": "fe14e952-4fa5-4ac5-9b55-cb0681b9754d",
+      "displayName": "Chris Behrens",
+      "userPrincipalName": "chrisbbehrens_hotmail.com#EXT#@chrisbbehrenshotmail466.onmicrosoft.com",
+      "onPremisesImmutableId": null,
+      "directoryRoles": [
+        "Global Administrator",
+        "Security Administrator"
+      ]
+    }
+  ]
+}
